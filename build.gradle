@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'az.azerconnect'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // lombok
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+}
+
+test {
+    useJUnitPlatform()
+}
